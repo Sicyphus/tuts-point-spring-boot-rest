@@ -43,9 +43,6 @@ HttpMethod.POST, entity, String.class).getBody();
  } 
   
  @RequestMapping(value="/template/products/{id}", method=RequestMethod.PUT) 
-Spring Boot        
-84 
- 
  public String updateProduct(@PathVariable("id") String id, @RequestBody 
 Product product) { 
   HttpHeaders headers = new HttpHeaders(); 

@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-Spring Boot        
-85 
- 
+<?xml version="1.0" encoding="UTF-8"?>  
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
@@ -24,8 +21,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
  
  <properties> 
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-  <project.reporting.outputEncoding>UTF
-8</project.reporting.outputEncoding> 
+  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
   <java.version>1.8</java.version> 
  </properties> 
  
@@ -40,17 +36,20 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <artifactId>spring-boot-starter-test</artifactId> 
    <scope>test</scope> 
   </dependency> 
-Spring Boot        
-86 
- 
  </dependencies> 
- 
  <build> 
   <plugins> 
    <plugin> 
     <groupId>org.springframework.boot</groupId> 
     <artifactId>spring-boot-maven-plugin</artifactId> 
    </plugin> 
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.4.0</version> <!-- Use the latest version available -->
+				<configuration>
+					<failOnError>false</failOnError>
+				</configuration>
+			</plugin>
   </plugins> 
  </build> 
  
